@@ -1,0 +1,43 @@
+nav {
+   width: 100vh;
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 182px;
+  }
+
+.logo{
+  width: 450px;
+  height: 150px;
+}
+.Btn-sign-up {
+    width: 94px;
+    height: 53px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32px;
+    border-radius: 12px;
+    background-color: #f59e33;
+    border : none;
+    color: aliceblue;
+    align-items: flex-end;
+    margin-left: 1rem;
+  }
+  .btnDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30rem;
+}
+.Line-1 {
+    background-color: #f59e33;
+    height: 5px;
+    /* margin: 23px 55px 20px 56px; */
+    width: 95rem;
+    /* margin-left: 7.5rem; */
+    /* margin-top: 4rem */
+  }
