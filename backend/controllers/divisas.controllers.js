@@ -19,12 +19,13 @@ const Divisas = {
   },
   updateDivisas: async (req, res) => {
     let { id, grupo, socios, acciones, prestamos, importe } = req.body;
+    console.log(acciones)
     
-    if (pais == "España") {
-      importe = importe / 1.1;
-    } else if (pais == "Peru") {
-      importe = importe / 3.3;
-    }
+    // if (pais == "España") {
+    //   importe = importe / 1.1;
+    // } else if (pais == "Peru") {
+    //   importe = importe / 3.3;
+    // }
 
     await divisasModel.update(
       {
@@ -41,7 +42,7 @@ const Divisas = {
     console.log("UPDATE");
 
   
-    res.json(infoOne);
+    // res.json(infoOne);
   },
 
   insertDivis: async (req, res) => {
