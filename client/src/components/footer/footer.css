@@ -1,0 +1,15 @@
+.footer{
+    width: 100vw;
+    height: 180px;
+    background-color: #18282f;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+.contactContainer{
+    margin-left: 2rem;
+}
