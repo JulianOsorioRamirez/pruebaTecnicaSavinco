@@ -6,7 +6,7 @@ const Divisas = {
  
     const infoD = await divisasModel.findAll();
 
-    console.log(infoD);
+
     res.json(infoD);
   },
   deleteDivisas: async (req, res) => {
@@ -19,13 +19,9 @@ const Divisas = {
   },
   updateDivisas: async (req, res) => {
     let { id, grupo, socios, acciones, prestamos, importe } = req.body;
-    console.log(acciones)
+   
     
-    // if (pais == "España") {
-    //   importe = importe / 1.1;
-    // } else if (pais == "Peru") {
-    //   importe = importe / 3.3;
-    // }
+   
 
     await divisasModel.update(
       {
@@ -42,7 +38,7 @@ const Divisas = {
     console.log("UPDATE");
 
   
-    // res.json(infoOne);
+    
   },
 
   insertDivis: async (req, res) => {

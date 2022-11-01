@@ -67,10 +67,6 @@ function Acomp() {
       .then((response) => response.json())
       .then((res) => {});
   }
-  //   function handleChange (e) {
-  //     console.log("select");
-  //     this.setState({ state: e.target.value });
-  //   }
   return (
     <div className="aContainer">
       <div className="list">
@@ -90,7 +86,7 @@ function Acomp() {
             <input
               className="Rectangle-1"
               type="text"
-              placeholder="Introducir ID"
+              placeholder="Enter ID"
               onChange={(e) => setId(e.target.value)}
             />
             <button className="Btn2" onClick={deleteCrud}>

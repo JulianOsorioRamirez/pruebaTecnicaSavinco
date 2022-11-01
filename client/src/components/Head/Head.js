@@ -6,10 +6,15 @@ import { useNavigate } from "react-router-dom";
 
 
 function Head () {
+
+  const [navState, setNavState] = useState("");
+  
   const navigate = useNavigate()
    
   function sendAdmin () {
+    setNavState("Admin")
        navigate("/Admin")
+       
     
   }
   function sendHome () {
@@ -22,8 +27,14 @@ function Head () {
           <img src={Logo} className="logo"/>
           
           <div className='btnDiv'>
-          <input type="button" value="Home" onClick={sendHome} className="Btn"></input>
-          <input type="button" value="Administration"  onClick={sendAdmin}   className="Btn"></input>
+          {navState === "" ? (""
+          
+        ) : (
+          <input type="button" value="Home" onClick={sendHome} className="Btn2"></input>
+          
+        )}
+          
+          <input type="button" value="Admin"  onClick={sendAdmin}   className="Btn2"></input>
 
           {/* <input type="button" value="Login"  className="Btn"></input> */}
           </div>

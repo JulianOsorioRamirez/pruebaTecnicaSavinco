@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../db');
 
-// class Divisas extends Model {}
+
 const Divisas = sequelize.define('Divisas', {
     id: {
         type: DataTypes.INTEGER,

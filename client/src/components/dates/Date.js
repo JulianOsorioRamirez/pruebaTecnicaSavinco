@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Date.css";
-import Line from "../Line/Line";
+
 
 
 function Dates() {
@@ -12,18 +12,17 @@ function Dates() {
     fetch("/getDivisas")
       .then((res) => res.json())
       .then((divisas) => {
-        // console.log(divisas);
         divisas.map((div) => console.log(div));
-        let filtro = divisas.filter((divi) => divi.pais == country);
+        let filtro = divisas.filter((divi) => divi.pais === country);
         let grupoN = 0;
         let socios = 0;
         let acciones = 0;
         let prestamos = 0;
         let importe = 0;
         let nacionalidad = filtro[0].pais;
-        if (nacionalidad == "España") {
+        if (nacionalidad === "España") {
           setMulti(1.1);
-        } else if (nacionalidad == "Peru") {
+        } else if (nacionalidad === "Peru") {
           setMulti(3.3);
         } else {
           setMulti(1);
@@ -36,7 +35,6 @@ function Dates() {
           importe += atributos.importe;
         });
 
-        console.log(importe);
         setDatos({
           grupoN,
           socios,
