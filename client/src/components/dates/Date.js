@@ -57,9 +57,9 @@ function Dates() {
       >España</button>
       <button className="Btn2"
         type="button"
-        value="Mexico"
+        value="Ecuador"
         onClick={(e) => setCountry(e.target.value)}
-      >Mexico</button>
+      >Ecuador</button>
       <button className="Btn2"
         type="button"
         value="Peru"
